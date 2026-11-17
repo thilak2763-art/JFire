@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>About – J Fire Safety System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#e3e2df;--paper:#f6f5f3;--gray:#cdccc9;--ink:#0e0e0e;--line:rgba(14,14,14,.2);--hdr:calc(94px + env(safe-area-inset-top,0px));box-sizing:border-box;padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit}:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+#hd{position:fixed;top:0;left:0;right:0;z-index:50;transition:background .3s}
+.top{background:var(--ink);color:#fff;height:calc(30px + env(safe-area-inset-top,0px));padding:env(safe-area-inset-top,0px) max(24px,env(safe-area-inset-left,0px)) 0;display:flex;align-items:center;justify-content:space-between;font-size:10px;letter-spacing:.14em;text-transform:uppercase;overflow:hidden;transition:height .3s,padding .3s}
+#hd.solid .top{height:0;padding:0}
+#hd.solid{background:rgba(227,226,223,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav{height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 max(24px,env(safe-area-inset-right,0px)) 0 max(24px,env(safe-area-inset-left,0px));position:relative}
+#hd.solid nav{padding-top:env(safe-area-inset-top,0px);height:calc(64px + env(safe-area-inset-top,0px))}
+.nl{display:flex;gap:28px}.nl a,.dd a{font-size:11px;letter-spacing:.16em;text-transform:uppercase;text-decoration:none}
+.nc{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;gap:10px}
+#hd.solid .nc{top:calc(50% + env(safe-area-inset-top,0px)/2)}
+.nc .nimg{height:28px;width:auto}.nc .nname{height:15px;width:auto}
+.mt{min-height:44px;background:none;border:0;color:var(--ink);font:500 11px 'Inter',sans-serif;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;gap:10px}
+.mt i{width:18px;height:8px;border-top:1.5px solid;border-bottom:1.5px solid}
+.dd{position:absolute;right:max(24px,env(safe-area-inset-right,0px));top:100%;min-width:230px;background:var(--paper);border:1px solid var(--line);opacity:0;pointer-events:none;transform:translateY(-6px);transition:.2s}
+.dd.open{opacity:1;pointer-events:auto;transform:none}
+.dd a{display:block;padding:14px 20px;border-bottom:1px solid var(--line)}.dd a:hover{background:var(--ink);color:#fff}
+.sec{position:relative;overflow:hidden;padding:88px max(24px,6vw)}
+.bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:grayscale(1)}
+.bg video{width:100%;height:100%;object-fit:cover}.wash{position:absolute;inset:0}
+.in{position:relative;z-index:2}
+.lab{font-size:11px;letter-spacing:.3em;text-transform:uppercase;font-weight:500;line-height:1.9}
+.h{font-weight:800;letter-spacing:-.025em;line-height:.95;text-transform:uppercase;font-size:clamp(44px,8vw,104px);margin:14px 0 22px}
+.h2{font-size:22px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.p{font-size:15px;line-height:1.65;max-width:440px;margin-bottom:28px}
+.btn{display:inline-block;background:var(--ink);color:#fff;border:1px solid var(--ink);padding:17px 34px;font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;transition:.2s}
+.btn:hover{background:transparent;color:var(--ink)}
+.dark .btn{background:#fff;color:var(--ink);border-color:#fff}.dark .btn:hover{background:transparent;color:#fff}
+.lk{display:inline-block;font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:4px}
+.row{display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+.hero{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;padding-top:calc(var(--hdr) + 28px);padding-bottom:40px}
+.hero .tl i{display:block;width:28px;border-top:1px solid;margin-top:8px}
+.logo{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:16px 0}
+.mark{width:40vmin;height:auto;display:block}
+.giant{width:100%;max-width:1500px;height:auto;display:block;margin-top:3vmin}
+.hb{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
+.hb .tr{text-align:right}.hb .tr::after{content:"";display:block;width:28px;border-top:1px solid;margin:8px 0 0 auto}
+.vis{background:var(--gray);min-height:90vh;display:flex;align-items:center}
+.paper{background:var(--paper)}.dark{background:var(--ink);color:#fff}.mid{background:var(--gray)}
+.hrow{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:28px}
+.track{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:6px}
+.track::-webkit-scrollbar{display:none}
+.pc{flex:0 0 min(300px,72vw);scroll-snap-align:start;text-decoration:none;display:block}
+.pi{aspect-ratio:3/4;background:#bfbebb center/cover;margin-bottom:14px}
+.pc b{display:block;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.pc span{display:block;font-size:13px;opacity:.6;margin-top:4px;line-height:1.5}
+.pc em{display:inline-block;margin-top:12px;font-style:normal;font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;border-bottom:1px solid currentColor;padding-bottom:3px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:20px}
+.grid .pc{flex:none}.grid .pi{aspect-ratio:1}
+.c{flex:0 0 170px;height:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 10px;border:1px solid rgba(255,255,255,.3);font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;scroll-snap-align:start}
+.dots{display:flex;gap:8px;margin-top:18px}.dots i{position:relative;width:7px;height:7px;border-radius:50%;background:rgba(14,14,14,.25);cursor:pointer}
+.dots i::before{content:"";position:absolute;inset:-10px}.dots i.on{background:var(--ink)}
+.dark .dots i{background:rgba(255,255,255,.3)}.dark .dots i.on{background:#fff}
+.sg{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:36px}
+.sg b{display:block;font-size:clamp(52px,9vw,110px);font-weight:800;letter-spacing:-.03em;line-height:1;margin-bottom:10px}
+.sg span{font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;display:block}.sg p{font-size:14px;opacity:.65;margin-top:6px;line-height:1.5}
+.big{font-weight:800;letter-spacing:-.04em;line-height:.88;text-transform:uppercase;font-size:clamp(76px,19vw,280px);margin:20px 0 28px}
+.tm{flex:0 0 min(250px,70vw);scroll-snap-align:start}
+.tm .ph{aspect-ratio:3/4;background:#2a2a2a center/cover;display:flex;align-items:center;justify-content:center;font-size:72px;font-weight:800;color:rgba(255,255,255,.2);margin-bottom:14px}
+.pd{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,72px);align-items:start}
+.pd .h{font-size:clamp(34px,5vw,64px);margin-bottom:18px}
+.pim{aspect-ratio:4/5;background:#bfbebb;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:800;letter-spacing:-.02em;text-transform:uppercase;font-size:clamp(24px,4vw,44px);color:rgba(14,14,14,.35);padding:16px;overflow:hidden}
+.pim img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(.15)}
+.crumb a{text-decoration:none;border-bottom:1px solid currentColor}
+.sh{margin:6px 0 8px}
+dl{display:grid;grid-template-columns:max-content 1fr;gap:0 24px;margin-bottom:22px;font-size:14px}
+dt,dd{padding:9px 0;border-bottom:1px solid var(--line)}dt{opacity:.6}
+ul.f{list-style:none;font-size:14px;line-height:1.9}ul.f li::before{content:"";display:inline-block;width:6px;height:6px;background:var(--ink);margin-right:12px;vertical-align:middle}
+.ol{display:flex;flex-wrap:wrap;gap:10px}.ol a{border:1px solid rgba(255,255,255,.35);padding:13px 20px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;transition:.2s}
+.ol a:hover,.ol a.on{background:#fff;color:var(--ink)}
+.ft{text-align:center;padding-top:72px}
+.fm{width:min(14vmin,100px);height:auto;display:block;margin:0 auto 20px}
+.soc{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin:34px 0 30px}
+.soc a{width:48px;height:48px;border:1px solid var(--ink);display:flex;align-items:center;justify-content:center;color:var(--ink);transition:.2s}
+.soc a:hover{background:var(--ink);color:#fff}.soc svg{width:20px;height:20px;fill:currentColor}
+.copy{font-size:11px;letter-spacing:.14em;text-transform:uppercase;opacity:.6}
+@media(max-width:820px){.nl{display:none}.top span:last-child{display:none}.pd{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr);gap:14px}.sec{padding:72px 24px}.hb .tr{display:none}}
+@media(max-height:520px) and (orientation:landscape){.hero .tl{display:none}.sec{padding-top:56px;padding-bottom:56px}.hero{padding-top:calc(var(--hdr) + 8px)}}
+</style>
+</head>
+<body>
+<header id="hd">
+<div class="top"><span>Fire &amp; safety equipment and services</span><span>Installation · Servicing · Supply</span></div>
+<nav>
+<div class="nl"><a href="#top">About</a><a href="https://claude.ai/artifact/GCiUFHTXncdyFh5tBh6Fgr#products">Products</a><a href="https://claude.ai/artifact/GCiUFHTXncdyFh5tBh6Fgr#projects">Projects</a></div>
+<a class="nc" href="https://claude.ai/artifact/GCiUFHTXncdyFh5tBh6Fgr" aria-label="J Fire Safety System home"><img class="nimg" alt="" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20120'%3E%3Cpath%20d='M50%204c4%2022%2026%2030%2026%2058a26%2026%200%200%201-52%200c0-14%208-20%2012-30%203%208%208%2010%2010%2010C42%2030%2044%2016%2050%204z'%20fill='%230e0e0e'/%3E%3Cpath%20d='M50%2058c3%2012%2014%2015%2014%2028a14%2014%200%200%201-28%200c0-9%206-12%208-18%202%204%204%205%206%205%200-5%200-9%200-15z'%20fill='%23e3e2df'/%3E%3C/svg%3E"><img class="nname" alt="jfiresafetysystem" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20600%2070'%3E%3Ctext%20x='300'%20y='54'%20text-anchor='middle'%20textLength='580'%20lengthAdjust='spacingAndGlyphs'%20font-family='Arial%2CHelvetica%2Csans-serif'%20font-weight='800'%20font-size='58'%20fill='%230e0e0e'%3EJFIRESAFETYSYSTEM%3C/text%3E%3C/svg%3E"></a>
+<div><button class="mt" id="mt" aria-expanded="false" aria-controls="dd"><i></i>Menu</button><div class="dd" id="dd"><a href="https://claude.ai/artifact/GCiUFHTXncdyFh5tBh6Fgr">Home</a><a href="#top">About</a><a href="https://claude.ai/artifact/GCiUFHTXncdyFh5tBh6Fgr#vision">Vision</a><a href="https://claude.ai/artifact/GCiUFHTXncdyFh5tBh6Fgr#projects">Projects</a><a href="https://claude.ai/artifact/GCiUFHTXncdyFh5tBh6Fgr#clients">Clients</a><a href="https://claude.ai/artifact/GCiUFHTXncdyFh5tBh6Fgr#products">Products</a><a href="https://claude.ai/artifact/GCiUFHTXncdyFh5tBh6Fgr#numbers">Numbers</a></div></div>
+</nav></header>
+<section class="sec hero" id="top" style="min-height:92vh">
+<div class="bg" style="background-image:url('images/about-hero.jpg')"></div><div class="wash" style="background:rgba(227,226,223,.88)"></div>
+<div class="in" style="margin-top:auto"><p class="lab">Who we are</p><h1 class="big">About<br>us</h1><p class="p">We design, supply and install fire protection systems for factories, hospitals, malls and homes, and we stay on to keep them working.</p><div class="row"><a class="btn" href="#team">Meet the team</a><a class="lk" href="#achievements">Our achievements</a></div></div>
+</section>
+<section class="sec vis" id="vision">
+<div class="bg"><video autoplay muted loop playsinline preload="metadata"><source src="videos/about-vision.mp4" type="video/mp4"></video></div><div class="wash" style="background:rgba(205,204,201,.6)"></div>
+<div class="in"><p class="lab">Our vision</p><h2 class="h">Safer places,<br>every day.</h2><p class="p">To be the most trusted name in fire protection, making every workplace and home safer through quality products and dependable service.</p><div class="sg" style="max-width:760px"><div><span>Mission</span><p>Deliver reliable fire safety systems, installed right and serviced on time.</p></div><div><span>Promise</span><p>Safety first, always ready.</p></div><div><span>Values</span><p>Honest advice, certified work and fast response.</p></div></div></div>
+</section>
+<section class="sec dark" id="team">
+<div class="bg" style="background-image:url('images/team-bg.jpg')"></div><div class="wash" style="background:rgba(14,14,14,.9)"></div>
+<div class="in"><div class="hrow"><h2 class="h2">Our team</h2></div><div class="track" data-dots="td"><div class="tm"><div class="ph" data-img="images/team/1.jpg">A</div><b class="lab" style="font-weight:600">Name</b><span style="display:block;font-size:13px;opacity:.6">Founder and managing director</span></div><div class="tm"><div class="ph" data-img="images/team/2.jpg">B</div><b class="lab" style="font-weight:600">Name</b><span style="display:block;font-size:13px;opacity:.6">Technical head</span></div><div class="tm"><div class="ph" data-img="images/team/3.jpg">C</div><b class="lab" style="font-weight:600">Name</b><span style="display:block;font-size:13px;opacity:.6">Operations manager</span></div><div class="tm"><div class="ph" data-img="images/team/4.jpg">D</div><b class="lab" style="font-weight:600">Name</b><span style="display:block;font-size:13px;opacity:.6">Safety engineer</span></div><div class="tm"><div class="ph" data-img="images/team/5.jpg">E</div><b class="lab" style="font-weight:600">Name</b><span style="display:block;font-size:13px;opacity:.6">Service lead</span></div></div><div class="dots" id="td"></div></div>
+</section>
+<section class="sec mid" id="achievements">
+<div class="bg"><video autoplay muted loop playsinline preload="metadata"><source src="videos/achievements.mp4" type="video/mp4"></video></div><div class="wash" style="background:rgba(205,204,201,.7)"></div>
+<div class="in"><div class="hrow"><h2 class="h2">Our achievements</h2></div><div class="sg"><div><b data-n="250">0</b><span>Projects completed</span><p>Industrial, commercial and residential sites.</p></div><div><b data-n="10">0</b><span>Years in service</span><p>Dependable protection since our first installation.</p></div><div><b data-n="100">0</b><span>Certified work</span><p>Installed to approved fire safety standards.</p></div><div><b data-n="24">0</b><span>Hour response</span><p>Support when a system needs attention.</p></div></div></div>
+</section>
+<footer class="sec ft paper" id="contact">
+<div class="bg" style="background-image:url('images/footer.jpg')"></div><div class="wash" style="background:rgba(246,245,243,.92)"></div>
+<div class="in"><img class="fm" alt="J Fire Safety System logo" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20120'%3E%3Cpath%20d='M50%204c4%2022%2026%2030%2026%2058a26%2026%200%200%201-52%200c0-14%208-20%2012-30%203%208%208%2010%2010%2010C42%2030%2044%2016%2050%204z'%20fill='%230e0e0e'/%3E%3Cpath%20d='M50%2058c3%2012%2014%2015%2014%2028a14%2014%200%200%201-28%200c0-9%206-12%208-18%202%204%204%205%206%205%200-5%200-9%200-15z'%20fill='%23e3e2df'/%3E%3C/svg%3E"><img class="giant" style="margin:0 auto" alt="jfiresafetysystem" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20600%2070'%3E%3Ctext%20x='300'%20y='54'%20text-anchor='middle'%20textLength='580'%20lengthAdjust='spacingAndGlyphs'%20font-family='Arial%2CHelvetica%2Csans-serif'%20font-weight='800'%20font-size='58'%20fill='%230e0e0e'%3EJFIRESAFETYSYSTEM%3C/text%3E%3C/svg%3E">
+<div class="soc">
+      <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.5 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg></a>
+      <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+      <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4 9h4v12H4zM6 3a2.2 2.2 0 1 1 0 4.4A2.2 2.2 0 0 1 6 3zm5 6h3.8v1.7c.6-1 1.9-2 3.9-2 4 0 4.3 2.6 4.3 6V21h-4v-5.5c0-1.4 0-3-1.9-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg></a>
+      <a href="#" aria-label="X"><svg viewBox="0 0 24 24"><path d="M17.5 3h3.2l-7 8 8.3 10h-6.5l-5-6.3L4.800 21H1.600l7.500-8.600L1.200 3h6.600l4.600 5.800zm-1.100 16h1.800L7.500 4.900H5.600z"/></svg></a>
+      <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.600 15L2 22l5.200-1.400A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.200 14.800l-.4-.2-3 .8.8-2.900-.2-.4A8 8 0 0 1 12 4zm-3 3.500c-.3 0-.7.1-1 .5-.4.500-1 1.300-1 2.600 0 1.400 1 2.700 1.200 2.900.2.200 2 3.200 5 4.300 2.500.9 3 .7 3.500.7.600-.1 1.800-.8 2-1.500.3-.7.3-1.300.2-1.500-.1-.1-.3-.2-.7-.4l-1.700-.8c-.3-.1-.5-.1-.7.2l-.8 1c-.1.200-.3.200-.6.100-.9-.4-1.700-.9-2.400-1.600-.6-.6-1.100-1.300-1.400-1.900-.1-.3 0-.4.200-.6l.5-.6.300-.5c.1-.2 0-.4 0-.5l-.8-2c-.2-.5-.4-.5-.6-.5H9z"/></svg></a>
+      <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M21.600 7.200a2.500 2.500 0 0 0-1.800-1.800C18.200 5 12 5 12 5s-6.200 0-7.800.4A2.500 2.500 0 0 0 2.400 7.200C2 8.800 2 12 2 12s0 3.200.4 4.800a2.500 2.500 0 0 0 1.800 1.800C5.800 19 12 19 12 19s6.200 0 7.800-.4a2.500 2.500 0 0 0 1.800-1.800c.4-1.600.4-4.800.4-4.800s0-3.200-.4-4.800zM10 15V9l5.200 3z"/></svg></a>
+    </div>
+<p class="copy">© 2026 J Fire Safety System</p></div></footer>
+<script>
+(function(){var hd=document.getElementById('hd'),mt=document.getElementById('mt'),dd=document.getElementById('dd');
+function sc(){hd.classList.toggle('solid',scrollY>40)}sc();addEventListener('scroll',sc,{passive:true});
+mt.onclick=function(e){e.stopPropagation();var o=dd.classList.toggle('open');mt.setAttribute('aria-expanded',o)};
+document.addEventListener('click',function(){dd.classList.remove('open');mt.setAttribute('aria-expanded','false')});
+document.querySelectorAll('video source').forEach(function(s){s.addEventListener('error',function(){var v=s.parentElement;v&&v.remove()})});
+document.querySelectorAll('.track[data-dots]').forEach(function(t){var b=document.getElementById(t.dataset.dots),cs=t.children,d=[];
+for(var i=0;i<cs.length;i++)(function(i){var s=document.createElement('i');s.onclick=function(){cs[i].scrollIntoView({behavior:'smooth',inline:'start',block:'nearest'})};b.appendChild(s);d.push(s)})(i);
+function up(){var c=t.scrollLeft+t.clientWidth/2,k=0,m=1e9;for(var i=0;i<cs.length;i++){var x=Math.abs(cs[i].offsetLeft+cs[i].offsetWidth/2-c);if(x<m){m=x;k=i}}d.forEach(function(s,i){s.className=i===k?'on':''})}
+t.addEventListener('scroll',up,{passive:true});up()});
+var ns=document.querySelectorAll('[data-n]');function run(el){var t=+el.dataset.n,s=0,st=Math.max(1,Math.ceil(t/60)),id=setInterval(function(){s+=st;if(s>=t){s=t;clearInterval(id)}el.textContent=s.toLocaleString()+'+'},25)}
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){run(x.target);io.unobserve(x.target)}})},{threshold:.5});ns.forEach(function(n){io.observe(n)})}else ns.forEach(run);
+})();
+document.querySelectorAll('.ph[data-img]').forEach(function(p){var im=new Image();im.onload=function(){p.style.backgroundImage="url('"+p.dataset.img+"')";p.textContent=''};im.src=p.dataset.img});</script>
+</body>
+</html>
